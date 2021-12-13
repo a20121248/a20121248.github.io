@@ -6,6 +6,7 @@ import { PagesComponent } from './pages/pages.component';
 import { ReadingLogComponent } from './pages/reading-log/reading-log.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   {
     path: '',
     component: PagesComponent,
@@ -15,7 +16,6 @@ const routes: Routes = [
       { path: 'reading-log', component: ReadingLogComponent },
     ]
   },
-  /*{ path: '', pathMatch: 'full', redirectTo: 'home' }*/
 ];
 
 @NgModule({
