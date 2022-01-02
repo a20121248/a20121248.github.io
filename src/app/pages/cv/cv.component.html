@@ -1,0 +1,182 @@
+<div class="modulos" fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex="80" fxLayout="column" fxLayoutAlign="start">
+        <h1>CV</h1>
+        <p>You can find my CV <b><a href="assets/files/CV Javier Monzon.pdf" target="_blank">here</a></b>.</p>
+        <h2>Education</h2>
+        <div>
+            <swiper
+            [slidesPerView]="3"
+            [spaceBetween]="50"
+            (swiper)="onSwiper($event)"
+            (slideChange)="onSlideChange()"
+            [navigation]="true"
+            [pagination]="{ clickable: true }"
+            [scrollbar]="{ draggable: true }">  
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Costos y Presupuestos para la Toma de Decisiones</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">Pacífico Business School</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Finance/PBS Costos y Presupuestos para la Toma de Decisiones.pdf" target="_blank">
+                                <img class="diploma-vert" [src]="'assets/files/Finance/PBS Costos y Presupuestos para la Toma de Decisiones 1.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Gestión del Riesgo Crediticio</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">Centrum PUCP</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Finance/CENTRUM Gestión del Riesgo Crediticio.pdf" target="_blank">
+                                <img class="diploma-vert" [src]="'assets/files/Finance/CENTRUM Gestión del Riesgo Crediticio 1.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Thesis</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">ICAART 2019 - Czech Republic</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/ICAART 2019.pdf" target="_blank">
+                                <img class="diploma-vert" [src]="'assets/files/ICAART 2019.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Titulado en Ingeniería Informática</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">PUCP</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Studies/Título.pdf" target="_blank">
+                                <img class="diploma-vert" [src]="'assets/files/Studies/Título-1.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Bachiller en Ingeniería Informática</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">PUCP</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Studies/Bachiller.pdf" target="_blank">
+                                <img class="diploma-vert" [src]="'assets/files/Studies/Bachiller-1.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                
+            </swiper>
+        </div>
+
+<br><br>
+        
+        <h2>Certifications</h2>
+        <div>
+            <swiper
+            [slidesPerView]="3"
+            [spaceBetween]="50"
+            (swiper)="onSwiper($event)"
+            (slideChange)="onSlideChange()"
+            [navigation]="true"
+            [pagination]="{ clickable: true }"
+            [scrollbar]="{ draggable: true }">
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Machine Learning with Python-From Linear Models to Deep Learning</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">MITx 6.86x</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="https://courses.edx.org/certificates/124abd3c80004266b9e7a54157babb48" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/MITx/Certificado MITx 6.86x edX.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">SAS Certified Associate Programming Fundamentals Using SAS 9.4</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">SAS</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/SAS/SAS Certified Associate - Programming Fundamentals Using SAS 9.4.pdf" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/SAS/SAS Certified Associate - Programming Fundamentals Using SAS 9.4.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Microsoft Certified Azure Data Scientist Associate</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">Azure</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Azure/Microsoft Certified Azure Data Scientist Associate.pdf" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/Azure/Microsoft Certified Azure Data Scientist Associate.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Microsoft Certified Azure AI Fundamentals</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">Azure</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Azure/Microsoft Certified Azure AI Fundamentals.pdf" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/Azure/Microsoft Certified Azure AI Fundamentals.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Microsoft Certified Azure Data Fundamentals</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">Azure</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Azure/Microsoft Certified Azure Data Fundamentals.pdf" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/Azure/Microsoft Certified Azure Data Fundamentals.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">Microsoft Certified Azure Fundamentals</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">Azure</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/Azure/Microsoft Certified Azure Fundamentals.pdf" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/Azure/Microsoft Certified Azure Fundamentals.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+            </swiper>
+        </div>
+
+   </div>
+</div>

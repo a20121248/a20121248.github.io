@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CvComponent } from './pages/cv/cv.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LinksComponent } from './pages/links/links.component';
 import { PagesComponent } from './pages/pages.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'links', component: LinksComponent },
       { path: 'reading-log', component: ReadingLogComponent },
+      { path: 'cv', component: CvComponent },
     ]
   },
 ];

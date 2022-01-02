@@ -15,6 +15,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { SwiperModule } from 'swiper/angular';
+import { CvComponent } from './pages/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     LinksComponent,
     ReadingLogComponent,
-    PagesComponent
+    PagesComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
