@@ -1,4 +1,8 @@
 .modulos
+  mat-card
+    padding: .6rem .1rem
+    mat-card-content
+      text-align: center
   h1
     margin: 0.67em 0
     font-size: 34px
@@ -8,14 +12,9 @@
   p
     font-size: 16px
     line-height: 28px
-
-  .diploma-hori
-    width: 15rem
-
-  .diploma-vert
-    height: 23rem
   
   .cert-title1
+    line-height: 1.1rem
     font-size: .9rem
     font-weight: 600
   
@@ -25,3 +24,30 @@
 
   .example-card
     max-width: 400px
+
+  .diploma-vert
+    height: 17rem
+
+  .diploma-hori
+    width: 12rem
+
+  @media screen and (max-width: 960px)
+    .cert-title1
+      font-size: .8rem
+    .cert-title2
+      font-size: .7rem
+    .diploma-vert
+      height: 15rem
+    .diploma-hori
+      width: 12rem
+
+  @media screen and (max-width: 600px)
+    .cert-title1
+      font-size: .7rem
+      line-height: .95rem
+    .cert-title2
+      font-size: .6rem
+    .diploma-vert
+      height: 13rem
+    .diploma-hori
+      width: 9rem

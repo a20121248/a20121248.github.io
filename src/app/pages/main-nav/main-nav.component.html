@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
+      [ngClass]="{hidden: !(isHandset$ | async)}"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['home']" routerLinkActive="active"><mat-icon>home</mat-icon>Home</a>
+      <a mat-list-item [routerLink]="['links']" routerLinkActive="active"><mat-icon>link</mat-icon>Links</a>
+      <a mat-list-item [routerLink]="['reading-log']" routerLinkActive="active"><mat-icon>book</mat-icon>Reading Log</a>
+      <a mat-list-item [routerLink]="['cv']" routerLinkActive="active"><mat-icon>description</mat-icon>CV</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Javier Monzon Durand</span>
+      <mat-list fxLayout="row" role="list" *ngIf="!(isHandset$ | async)">
+        <mat-list-item role="listitem">
+          <a class="navbar-item-selected" mat-button [routerLink]="['home']" routerLinkActive="active"><span>Home</span></a>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a class="navbar-item-selected" mat-button [routerLink]="['links']" routerLinkActive="active"><span>Links</span></a>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a class="navbar-item-selected" mat-button [routerLink]="['reading-log']" routerLinkActive="active"><span>Reading Log</span></a>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a class="navbar-item-selected" mat-button [routerLink]="['cv']" routerLinkActive="active"><span>CV</span></a>
+        </mat-list-item>
+      </mat-list>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

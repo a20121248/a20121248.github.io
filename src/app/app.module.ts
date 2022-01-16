@@ -16,8 +16,13 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 import { SwiperModule } from 'swiper/angular';
 import { CvComponent } from './pages/cv/cv.component';
+import { ProfileComponent } from './shared/profile/profile.component';
+import { MainNavComponent } from './pages/main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,9 @@ import { CvComponent } from './pages/cv/cv.component';
     LinksComponent,
     ReadingLogComponent,
     PagesComponent,
-    CvComponent
+    CvComponent,
+    ProfileComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,10 @@ import { CvComponent } from './pages/cv/cv.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    SwiperModule
+    MatMenuModule,
+    SwiperModule,
+    LayoutModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

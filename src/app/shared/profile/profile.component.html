@@ -1,0 +1,28 @@
+<div class="profile" fxLayout="column" fxLayout.xs="row">
+    <div class="profile-photo" fxFlex.xs="20">
+        <img class="profile-photo" [src]="'assets/images/profile-1-200x200.jpg'">
+    </div>
+    <div class="author" fxFlex.xs="70">
+        <div class="name">
+            Javier Monzon
+        </div>
+        <div class="title">
+            Informatics Engineer
+        </div>
+    </div>
+    <div class="social-links">
+        <button mat-stroked-button [matMenuTriggerFor]="menu" color="primary" fxHide fxShow.lt-sm>
+            <mat-icon>person_add</mat-icon> Follow
+        </button>
+        <mat-menu #menu="matMenu">
+          <a class="menu-link" mat-menu-item href="https://www.facebook.com/javiermd13" target="_blank"><mat-icon>facebook</mat-icon>Facebook</a>
+          <a class="menu-link" mat-menu-item href="https://www.linkedin.com/in/javiermd13/" target="_blank"><mat-icon>public</mat-icon>LinkedIn</a>
+        </mat-menu>
+        <ul class="social-icons" fxHide.lt-sm>
+            <li><mat-icon>place</mat-icon>Lima, Peru</li>
+            <li><mat-icon>school</mat-icon>PUCP</li>
+            <li><a href="https://www.facebook.com/javiermd13" target="_blank"><mat-icon>facebook</mat-icon>Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/javiermd13/" target="_blank"><mat-icon>public</mat-icon>LinkedIn</a></li>
+        </ul>
+    </div>
+</div>

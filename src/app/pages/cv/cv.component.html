@@ -1,17 +1,13 @@
 <div class="modulos" fxLayout="row" fxLayoutAlign="center">
-    <div fxFlex="80" fxLayout="column" fxLayoutAlign="start">
+    <div fxFlex="90" fxLayout="column" fxLayoutAlign="start">
         <h1>CV</h1>
         <p>You can find my CV <b><a href="assets/files/CV Javier Monzon.pdf" target="_blank">here</a></b>.</p>
         <h2>Education</h2>
         <div>
             <swiper
-            [slidesPerView]="3"
-            [spaceBetween]="50"
+            [config]="configEdu"
             (swiper)="onSwiper($event)"
-            (slideChange)="onSlideChange()"
-            [navigation]="true"
-            [pagination]="{ clickable: true }"
-            [scrollbar]="{ draggable: true }">  
+            (slideChange)="onSlideChange()">
                 <ng-template swiperSlide>
                     <mat-card class="example-card">
                         <mat-card-header>
@@ -90,17 +86,13 @@
         <h2>Certifications</h2>
         <div>
             <swiper
-            [slidesPerView]="3"
-            [spaceBetween]="50"
+            [config]="configCert"
             (swiper)="onSwiper($event)"
-            (slideChange)="onSlideChange()"
-            [navigation]="true"
-            [pagination]="{ clickable: true }"
-            [scrollbar]="{ draggable: true }">
+            (slideChange)="onSlideChange()">
                 <ng-template swiperSlide>
                     <mat-card class="example-card">
                         <mat-card-header>
-                            <mat-card-title class="cert-title1">Machine Learning with Python-From Linear Models to Deep Learning</mat-card-title>
+                            <mat-card-title class="cert-title1">Machine Learning with Python: From Linear Models to Deep Learning</mat-card-title>
                             <mat-card-subtitle class="cert-title2">MITx 6.86x</mat-card-subtitle>
                         </mat-card-header>
                         <mat-card-content>
@@ -113,7 +105,20 @@
                 <ng-template swiperSlide>
                     <mat-card class="example-card">
                         <mat-card-header>
-                            <mat-card-title class="cert-title1">SAS Certified Associate Programming Fundamentals Using SAS 9.4</mat-card-title>
+                            <mat-card-title class="cert-title1">SAS Certified Specialist: Base Programming Using SAS 9.4</mat-card-title>
+                            <mat-card-subtitle class="cert-title2">SAS</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <a href="assets/files/SAS/SAS Certified Specialist - Base Programming Using SAS 9.4.pdf" target="_blank">
+                                <img class="diploma-hori" [src]="'assets/files/SAS/SAS Certified Specialist - Base Programming Using SAS 9.4.png'">
+                            </a>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="cert-title1">SAS Certified Associate: Programming Using SAS 9.4</mat-card-title>
                             <mat-card-subtitle class="cert-title2">SAS</mat-card-subtitle>
                         </mat-card-header>
                         <mat-card-content>
