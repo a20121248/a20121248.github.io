@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit { 
   public constructor(private titleService: Title) {
-    this.titleService.setTitle("Personal website of Javier Monzon");
+    this.titleService.setTitle("Personal website of Javier Monzon, Informatics Engineer");
   }
 
   ngOnInit(): void {
