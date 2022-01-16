@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-links',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksComponent implements OnInit {
 
-  constructor() { }
-
+  public constructor(private titleService: Title) {
+    this.titleService.setTitle("Links | Personal website of Javier Monzon");
+  }
   ngOnInit(): void {
   }
 

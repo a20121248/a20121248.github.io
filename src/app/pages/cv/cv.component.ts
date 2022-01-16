@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // import Swiper core and required modules
 import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions } from 'swiper';
+import { Title } from '@angular/platform-browser';
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 @Component({
@@ -59,7 +60,9 @@ export class CvComponent implements OnInit {
     console.log('slide change');
   }
 
-  constructor() { }
+  public constructor(private titleService: Title) {
+    this.titleService.setTitle("CV | Personal website of Javier Monzon");
+  }
 
   ngOnInit(): void {
   }
